@@ -1,5 +1,5 @@
 import pygame
-import time
+import time 
 import random
 import time
 pygame.init() #Initializes the pygame
@@ -12,10 +12,10 @@ win = pygame.display.set_mode((screenWidth, screenLength)) #pygame.display.set_m
  
 pygame.display.set_caption("Claymore: A Thousand Tales") #pygame.display.set_caption function sets the displayed window caption when the game is running
 
-walkRight = [pygame.image.load('R1.png'), pygame.image.load('R2.png'), pygame.image.load('R3.png'), pygame.image.load('R4.png'), pygame.image.load('R5.png'), pygame.image.load('R6.png'), pygame.image.load('R7.png'), pygame.image.load('R8.png'), pygame.image.load('R9.png')] #pygame.image.load function calls upon specific images from the shared folder based on the input from the user arrow keys
-walkLeft = [pygame.image.load('L1.png'), pygame.image.load('L2.png'), pygame.image.load('L3.png'), pygame.image.load('L4.png'), pygame.image.load('L5.png'), pygame.image.load('L6.png'), pygame.image.load('L7.png'), pygame.image.load('L8.png'), pygame.image.load('L9.png')]
-bg = pygame.image.load('Background.png') #Functions calls and displays image for game background
-char = pygame.image.load('standing.png') #Function calls and displays the idle image for the user's character
+walkRight = [pygame.image.load('Images/R1.png'), pygame.image.load('Images/R2.png'), pygame.image.load('Images/R3.png'), pygame.image.load('Images/R4.png'), pygame.image.load('Images/R5.png'), pygame.image.load('Images/R6.png'), pygame.image.load('Images/R7.png'), pygame.image.load('Images/R8.png'), pygame.image.load('Images/R9.png')] #pygame.image.load function calls upon specific images from the shared folder based on the input from the user arrow keys
+walkLeft = [pygame.image.load('Images/L1.png'), pygame.image.load('Images/L2.png'), pygame.image.load('Images/L3.png'), pygame.image.load('Images/L4.png'), pygame.image.load('Images/L5.png'), pygame.image.load('Images/L6.png'), pygame.image.load('Images/L7.png'), pygame.image.load('Images/L8.png'), pygame.image.load('Images/L9.png')]
+bg = pygame.image.load('Images/Background.png') #Functions calls and displays image for game background
+char = pygame.image.load('Images/standing.png') #Function calls and displays the idle image for the user's character
 
 clock = pygame.time.Clock() #pygame.time.clock function defines the 'clock' to be used for other functions  
 
@@ -79,8 +79,8 @@ class projectile(object): #Creates a 'projectile' class, an object in the game
 
 class enemy(object): #Creates a 'enemy' class, an object in the game
     #Following lines call upon the images from the shared folder to be used for animations when walking in each direction
-    walkRight = [pygame.image.load('R1E.png'), pygame.image.load('R2E.png'), pygame.image.load('R3E.png'), pygame.image.load('R4E.png'), pygame.image.load('R5E.png'), pygame.image.load('R6E.png'), pygame.image.load('R7E.png'), pygame.image.load('R8E.png'), pygame.image.load('R9E.png'), pygame.image.load('R10E.png'), pygame.image.load('R11E.png')]
-    walkLeft = [pygame.image.load('L1E.png'), pygame.image.load('L2E.png'), pygame.image.load('L3E.png'), pygame.image.load('L4E.png'), pygame.image.load('L5E.png'), pygame.image.load('L6E.png'), pygame.image.load('L7E.png'), pygame.image.load('L8E.png'), pygame.image.load('L9E.png'), pygame.image.load('L10E.png'), pygame.image.load('L11E.png')]
+    walkRight = [pygame.image.load('Images/R1E.png'), pygame.image.load('Images/R2E.png'), pygame.image.load('Images/R3E.png'), pygame.image.load('Images/R4E.png'), pygame.image.load('Images/R5E.png'), pygame.image.load('Images/R6E.png'), pygame.image.load('Images/R7E.png'), pygame.image.load('Images/R8E.png'), pygame.image.load('Images/R9E.png'), pygame.image.load('Images/R10E.png'), pygame.image.load('Images/R11E.png')]
+    walkLeft = [pygame.image.load('Images/L1E.png'), pygame.image.load('Images/L2E.png'), pygame.image.load('Images/L3E.png'), pygame.image.load('Images/L4E.png'), pygame.image.load('Images/L5E.png'), pygame.image.load('Images/L6E.png'), pygame.image.load('Images/L7E.png'), pygame.image.load('Images/L8E.png'), pygame.image.load('Images/L9E.png'), pygame.image.load('Images/L10E.png'), pygame.image.load('Images/L11E.png')]
 
     def __init__(self, x, y, width, height, end):
         self.x = x #No set value so that it can change dynamically when the enemy moves on the x axis
@@ -139,8 +139,8 @@ class enemy(object): #Creates a 'enemy' class, an object in the game
 
 class bigenemy(object):
     #Following lines call upon the images from the shared folder to be used for animations when walking in the corresponding direction
-    walkRight = [pygame.image.load('R1E.png'), pygame.image.load('R2E.png'), pygame.image.load('R3E.png'), pygame.image.load('R4E.png'), pygame.image.load('R5E.png'), pygame.image.load('R6E.png'), pygame.image.load('R7E.png'), pygame.image.load('R8E.png'), pygame.image.load('R9E.png'), pygame.image.load('R10E.png'), pygame.image.load('R11E.png')]
-    walkLeft = [pygame.image.load('L1E.png'), pygame.image.load('L2E.png'), pygame.image.load('L3E.png'), pygame.image.load('L4E.png'), pygame.image.load('L5E.png'), pygame.image.load('L6E.png'), pygame.image.load('L7E.png'), pygame.image.load('L8E.png'), pygame.image.load('L9E.png'), pygame.image.load('L10E.png'), pygame.image.load('L11E.png')]
+    walkRight = [pygame.image.load('Images/R1E.png'), pygame.image.load('Images/R2E.png'), pygame.image.load('Images/R3E.png'), pygame.image.load('Images/R4E.png'), pygame.image.load('Images/R5E.png'), pygame.image.load('Images/R6E.png'), pygame.image.load('Images/R7E.png'), pygame.image.load('Images/R8E.png'), pygame.image.load('Images/R9E.png'), pygame.image.load('Images/R10E.png'), pygame.image.load('Images/R11E.png')]
+    walkLeft = [pygame.image.load('Images/L1E.png'), pygame.image.load('Images/L2E.png'), pygame.image.load('Images/L3E.png'), pygame.image.load('Images/L4E.png'), pygame.image.load('Images/L5E.png'), pygame.image.load('Images/L6E.png'), pygame.image.load('Images/L7E.png'), pygame.image.load('Images/L8E.png'), pygame.image.load('Images/L9E.png'), pygame.image.load('Images/L10E.png'), pygame.image.load('Images/L11E.png')]
 
     def __init__(self, x, y, width, height, end):
         self.x = x
@@ -198,8 +198,8 @@ class bigenemy(object):
 
             
 class flyenemy(object):
-    walkRight = [pygame.image.load('R1E.png'), pygame.image.load('R2E.png'), pygame.image.load('R3E.png'), pygame.image.load('R4E.png'), pygame.image.load('R5E.png'), pygame.image.load('R6E.png'), pygame.image.load('R7E.png'), pygame.image.load('R8E.png'), pygame.image.load('R9E.png'), pygame.image.load('R10E.png'), pygame.image.load('R11E.png')]
-    walkLeft = [pygame.image.load('L1E.png'), pygame.image.load('L2E.png'), pygame.image.load('L3E.png'), pygame.image.load('L4E.png'), pygame.image.load('L5E.png'), pygame.image.load('L6E.png'), pygame.image.load('L7E.png'), pygame.image.load('L8E.png'), pygame.image.load('L9E.png'), pygame.image.load('L10E.png'), pygame.image.load('L11E.png')]
+    walkRight = [pygame.image.load('Images/R1E.png'), pygame.image.load('Images/R2E.png'), pygame.image.load('Images/R3E.png'), pygame.image.load('Images/R4E.png'), pygame.image.load('Images/R5E.png'), pygame.image.load('Images/R6E.png'), pygame.image.load('Images/R7E.png'), pygame.image.load('Images/R8E.png'), pygame.image.load('Images/R9E.png'), pygame.image.load('Images/R10E.png'), pygame.image.load('Images/R11E.png')]
+    walkLeft = [pygame.image.load('Images/L1E.png'), pygame.image.load('Images/L2E.png'), pygame.image.load('Images/L3E.png'), pygame.image.load('Images/L4E.png'), pygame.image.load('Images/L5E.png'), pygame.image.load('Images/L6E.png'), pygame.image.load('Images/L7E.png'), pygame.image.load('Images/L8E.png'), pygame.image.load('Images/L9E.png'), pygame.image.load('Images/L10E.png'), pygame.image.load('Images/L11E.png')]
 
     def __init__(self, x, y, width, height, end):
         self.x = x 
@@ -270,7 +270,7 @@ def redrawGameWindow():
 def gameover():
     global run #Global function calls upon the 'run' variable from outside the loop
     music = pygame.mixer.music.pause() #Function stops the game music
-    EndMusic = pygame.mixer.music.load('BossTheme.mp3') #pygame.mixer.music.load calls and loads a MP3 track from its shared folder into the program 
+    EndMusic = pygame.mixer.music.load('Music/EndScreen.mp3') #pygame.mixer.music.load calls and loads a MP3 track from its shared folder into the program 
     EndMusic = pygame.mixer.music.play(-1) #pygame.mixer.music.load plays loaded music in the game
     pygame.draw.rect(win, (0,0,0), (0, 0, screenWidth, screenLength)) #Black background rectangle
     pygame.draw.rect(win, (0,230,0), (100, 275, 300, 150)) #Green rectangle     
@@ -316,7 +316,7 @@ while run: #While loop keeps running until 'run' is no longer True
     pygame.time.set_timer(pygame.USEREVENT, random.randrange(3000, 7000)) #Time.set_timer function sets a timer in milliseconds to determine the amount of time for a loop to be repeated again, the randrange function uses a random integer from the provided range for the timer
     pygame.time.set_timer(pygame.USEREVENT + 1, random.randrange(7000, 14000))
     pygame.time.set_timer(pygame.USEREVENT + 2, random.randrange(4000, 11000))
-    music = pygame.mixer.music.load('Guile.mp3') #Loads 'Guile' song from shared folder
+    music = pygame.mixer.music.load('Music/GamePlay.mp3') #Loads 'Guile' song from shared folder
     music = pygame.mixer.music.play(-1) #Plays 'Guile'
 
     
