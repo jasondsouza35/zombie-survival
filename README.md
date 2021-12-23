@@ -1,2 +1,2 @@
 # Zombie Survival
-This is the first game I ever coded. Using Pygame, I created a 2D shooter where the player attempts to stay alive as long as possible. You get a gun and shooting the zombies will kill them however, each one is unique! If the character ever collides with a zombie the game ends. Hope you have fun playing!
+Using Pygame, I created a 2D shooter where the player's goal is to stay alive as long as possible. The player can kill zombies by shooting them however, each one is unique! If the player ever collides with a zombie the game ends. Hope you have fun playing!
